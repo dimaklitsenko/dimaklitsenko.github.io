@@ -24,7 +24,7 @@ a:active,a:visited, a:focus{
 	position: relative;
 	display:table;
 	width:100%;
-	background: #fff url(../img/main-bg.jpg) center center no-repeat;
+	background: #fff url(main-bg.jpg) center center no-repeat;
 	text-align: center;
 	height:100vh;
 	color: white;
