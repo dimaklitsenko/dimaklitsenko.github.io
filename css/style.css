@@ -260,6 +260,9 @@ a:active,a:visited, a:focus{
 	html{
 		font-size:4px;
 	}
+	.main-down{
+		margin-bottom: 4rem;
+	}
 	.footer strong{
 		margin-top:3rem 0 2rem;
         display: inline-block;
@@ -276,6 +279,9 @@ a:active,a:visited, a:focus{
 @media (min-width:0px) and (max-width: 200px){
 	html{
 		font-size:3px;
+	}
+	.main-down{
+		margin-bottom: 5rem;
 	}
 	.footer strong{
 		margin-top:3rem 0 2rem;
