@@ -14,7 +14,7 @@
     <title>Дмитрий Клиценко - Портфолио</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <script src="js/parallax.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Фавиконка -->
@@ -46,17 +46,18 @@
           <div class="col-md-4">
             <div class="portfolio-block">
             <img src="img/portfolio/img-1.jpg" alt="Работа №1">
-            <a data-toggle="modal" data-work='work-1' href="#work">Смотреть работу</a></div>
+             <a class="link cd-modal-trigger" data-work='work-1' href="#">Смотреть работу</a></div>
           </div>
           <div class="col-md-4">
             <div class="portfolio-block">
             <img src="img/portfolio/img-2.jpg" alt="Работа №2">
-            <a data-toggle="modal" data-work='work-2' href="#work">Смотреть работу</a></div>
+            <a class="link cd-modal-trigger" data-work='work-2' href="#">Смотреть работу</a></div>
           </div>
           <div class="col-md-4">
             <div class="portfolio-block">
             <img src="img/portfolio/img-3.jpg" alt="Работа №3">
-            <a data-toggle="modal" data-work='work-3' href="#work">Смотреть работу</a></div>
+            <a class="link cd-modal-trigger" data-work="work-3" href="#" ">Смотреть работу</a>
+           </div>
           </div>
         </div>  
       </div>
@@ -81,29 +82,26 @@
       </div>
     </div>
     <!--Всплывающее окно -->
-<div class="modal fade" id="work"  role="dialog">
-  <div class="modal-dialog" role="document"> 
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Сайт для ресторана</h4>
-      </div>
-      <div class="modal-body">
-      </div>
-    </div>
-  </div>
-</div>
+  <div class="cd-modal">
+  <div class="modal-content"><!-- .modal-content -->
+    
+  </div> 
+  <a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
 
+<div class="cd-transition-layer"> 
+  <div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-    <script src="js/bootstrap.min.js"></script>
+   <script src="js/main.js"></script> <!-- Resource jQuery -->
     <script>
       $(function() {
-        var link = $('a[data-toggle="modal"]');
+        var link = $('.cd-modal-trigger');
         link.on('click', function(event) {
           var work = $(this).attr('data-work');
-          var modal = $('.modal');
-          modal.find('.modal-body').load(work+'.html');
+          $('.modal-content').load(work+'.html');
         });
       });
     </script>
