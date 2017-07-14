@@ -210,11 +210,36 @@ a:active,a:visited, a:focus{
 .row p{
 
 }
+@media (min-width: 767px) and (max-width: 991px){
+	.footer strong{
+		margin-top:3rem 0 2rem;
+        display: inline-block;
+	}
+	.offer-button{
+		display: block;
+		width: 80%;
+	    max-width: 25rem;
+	}
+}
 @media (min-width: 370px) and (max-width: 767px){
 	html{
 		font-size:7px;
 	}
-    
+    .main-down{
+	position: absolute;
+	z-index:4;
+	color:#fff;
+	bottom:0;
+	left:50%;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	border:1px solid transparent;
+	line-height: 7rem;
+	font-size:3rem;
+	margin-bottom: 2rem;
+	transition: 0.2s;
+}
 	.footer strong{
 		margin-top:3rem 0 2rem;
         display: inline-block;
@@ -228,21 +253,26 @@ a:active,a:visited, a:focus{
 		font-size: 1.5rem;
 	}
 }
-@media (min-width: 767px) and (max-width: 991px){
-	.footer strong{
-		margin-top:3rem 0 2rem;
-        display: inline-block;
-	}
-	.offer-button{
-		display: block;
-		width: 80%;
-	    max-width: 25rem;
-	}
-}
+
 @media (min-width:300px) and (max-width: 380px){
 	html{
 		font-size:5px;
 	}
+	.main-down{
+	position: absolute;
+	z-index:4;
+	color:#fff;
+	bottom:0;
+	left:50%;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	border:1px solid transparent;
+	line-height: 10rem;
+	font-size:3.5rem;
+	margin-bottom: 2rem;
+	transition: 0.2s;
+}
 	.footer strong{
 		margin-top:3rem 0 2rem;
         display: inline-block;
@@ -261,7 +291,19 @@ a:active,a:visited, a:focus{
 		font-size:4px;
 	}
 	.main-down{
-		margin-bottom: 4rem;
+	position: absolute;
+	z-index:4;
+	color:#fff;
+	bottom:0;
+	left:50%;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	border:1px solid transparent;
+	line-height: 10rem;
+	font-size:5rem;
+	margin-bottom: 2rem;
+	transition: 0.2s;
 	}
 	.footer strong{
 		margin-top:3rem 0 2rem;
@@ -281,7 +323,19 @@ a:active,a:visited, a:focus{
 		font-size:3px;
 	}
 	.main-down{
-		margin-bottom: 5rem;
+	position: absolute;
+	z-index:4;
+	color:#fff;
+	bottom:0;
+	left:50%;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	border:1px solid transparent;
+	line-height: 10rem;
+	font-size:4rem;
+	margin-bottom: 2rem;
+	transition: 0.2s;
 	}
 	.footer strong{
 		margin-top:3rem 0 2rem;
