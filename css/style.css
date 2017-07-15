@@ -13,6 +13,7 @@ body{
 }
 a:active,a:visited, a:focus{
 	text-decoration: none;
+
 	outline: none;
 }
 /*Секция Main*/
@@ -385,7 +386,7 @@ Modal window
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
 }
 .modal-content{
-	background: #402f44 url(img/modal-bg.jpg) no-repeat center center;
+	background: url(../img/modal-bg.jpg) no-repeat center center;
 }
 .cd-modal .modal-content {
   height: 100%;

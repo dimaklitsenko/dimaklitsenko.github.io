@@ -1,0 +1,6 @@
+1.OpenSans Regular 48pt;
+2.OpenSans Regular 30pt;
+3.OpenSans Bold 36pt;
+4.OpenSans Regular 24pt;
+5.OpenSans Regular 22pt;
+6.OpenSans Regular 18pt;
