@@ -19,7 +19,8 @@
     <!-- Фавиконка -->
     <link rel="shortcut icon" type="image/x-icon" href="css/favicon.ico">
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>7      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -43,20 +44,20 @@
         <div class="row">
           <div class="col-md-4">
             <div class="portfolio-block">
-            <img src="img/portfolio/img-1.png" alt="Работа №1">
-             <a class="link cd-modal-trigger" data-work='work-1' href="#">Смотреть работу</a></div>
+            <img src="img/portfolio/img-1.jpg" class="link cd-modal-trigger" data-work='work-1' alt="Работа №1">
+             <a class="link cd-modal-trigger" data-work='work-1.html' href="#">Смотреть работу</a></div>
           </div>
           <div class="col-md-4">
             <div class="portfolio-block">
-            <img src="img/portfolio/img-9.png" alt="Работа №2">
-            <a class="link cd-modal-trigger" data-work="work-3" href="#" ">Смотреть работу</a></div>
-          </div>
-          <div class="col-md-4">
-            <div class="portfolio-block">
-            <img src="img/portfolio/img-7.png" alt="Работа №3">
+            <img src="img/portfolio/img-2.jpg" class="link cd-modal-trigger" data-work='work-2'href="work-2.html"alt="Работа №2">
             <a class="link cd-modal-trigger" data-work='work-2' href="#">Смотреть работу</a></div>
           </div>
-         
+          <div class="col-md-4">
+            <div class="portfolio-block">
+            <img class="link cd-modal-trigger"  data-work="work-3" src="img/portfolio/img-3.jpg" alt="Работа №3">
+            <a class="link cd-modal-trigger" data-work="work-3" href="#" ">Смотреть работу</a>
+           </div>
+          </div>
         </div>  
       </div>
     </div>
@@ -68,25 +69,24 @@
             <p>Разработка сайтов <br> под ключ</p>
           </div>
           <div class="col-md-6">
-            <strong>Подпишитесь</strong>
             <div class="social-links">
               <a href="https://vk.com/d.klitsenko"><i class="icon-vk"></i></a>
-              <a href="#"><i class="icon-instagram"></i></a>
+               <a href="#"><i class="icon-facebook"></i></a>
+                <a href="#"><i class="icon-gplus"></i></a>
               <a href="skype:dima.klitsenko17?chat"><i class="icon-skype"></i></a>
-              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-post"></i></a>
             </div>
           </div>
-          <div class="col-md-3"><strong>Напишите мне</strong><a href="https://vk.com/d.klitsenko" class="offer-button">Заказать сайт</a></div>
+          <div class="col-md-3"><a href="https://vk.com/d.klitsenko" class="offer-button">Заказать сайт</a></div>
         </div>
       </div>
     </div>
     <!--Всплывающее окно -->
-  <div class="cd-modal">
-  <div class="modal-content"><!-- .modal-content -->
+<div class="cd-modal">
+  <div class="modal-content">
   </div> 
   <a href="#0" class="modal-close">Close</a>
-</div> <!-- .cd-modal -->
-
+</div> 
 <div class="cd-transition-layer"> 
   <div class="bg-layer"></div>
 </div> <!-- .cd-transition-layer -->
@@ -108,7 +108,7 @@
         event.preventDefault();
         var id = $(this).attr('href'),
         top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: top}, 1000);
       });
     });
     </script>
