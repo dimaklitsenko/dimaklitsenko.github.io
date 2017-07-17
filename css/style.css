@@ -25,7 +25,7 @@ a:active,a:visited, a:focus{
 	position: relative;
 	display:table;
 	width:100%;
-	background: #fff url(../img/main-bg.jpg) center center no-repeat;
+	background: #fff url(../img/lake.jpg) center center no-repeat;
 	text-align: center;
 	height:100vh;
 	color: white;
@@ -104,7 +104,7 @@ a:active,a:visited, a:focus{
 }
 .portfolio a{
 	display: block;
-	margin: 2rem auto 5rem;
+	margin: 3rem auto 5rem;
 	color:#333;
 	width: 17rem;
 	border-bottom:1px solid transparent;
@@ -113,7 +113,9 @@ a:active,a:visited, a:focus{
 	text-decoration: none;
     border-bottom: 1px dotted #333;
 }
+
 /*Секция подвал*/
+
 .footer{
 	background-color: #646464;
 	color:#fff;
@@ -123,10 +125,17 @@ a:active,a:visited, a:focus{
 .footer strong{
 	font-weight: 300;
 	font-size: 2.4rem;
+    border-bottom: 2px solid #fff;
+
 	
 }
 .social-links{
-	margin-top: 1rem;
+	margin-top:1rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	padding: 1rem;
+	border: 1px solid #fff;
+	border-radius: 10px;
 }
 .social-links a{
 	width: 5rem;
@@ -138,6 +147,7 @@ a:active,a:visited, a:focus{
 	border-radius: 50%;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	margin-top:1rem;
 	font-size:2rem;
 	transition: 0.2s;
 }
@@ -156,74 +166,129 @@ a:active,a:visited, a:focus{
 	padding-bottom:1rem;
 	color: #fff;
 	border-radius: 100px;
+	font-size: 2rem;
 	transition:0.2s;
 }
 .offer-button:hover{
 	text-decoration: none;
 	background-color: #fff;
 	color:#646464;
-
 }
-
-.modal-title{
-	font-weight: 700;
-	font-size:2rem;
-}
-.modal-content{
-	height: ;
-	background-color: #fff;
-	border:1px solid #333;
-	border-radius: 10px;
-}
-.modal-header{
-	text-align: center;
-}
-.close{
-	background-color: transparent;
-	border:none;
-	font-size:3rem;
-	position: absolute;
-	right:2rem;
-	top:1rem;
+.row p{
+	margin-top: 1rem;
+	font-size: 2rem;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
 }
 .modal-btn{
 	display: inline-block;
 	color:#fff;
 	margin-top: 1rem;
-	margin-left: 5rem;
 	border:1px solid #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
+	margin-left:40%;
+	margin-right: 40%
 }
 .modal-btn:hover{
 	background-color: #333;
 	color:#fff;
 	text-decoration: none;
 }
-.row img{
-	
-}
-.row h4{
-   text-align: center;
-}
-.row p{
 
-}
 @media (min-width: 767px) and (max-width: 991px){
+	html{
+		font-size:9px;
+	}
+	.main p{
+	font-weight: 300;
+	font-size: 3.5rem;
+	margin-top: 2rem;
+	}
+	.main-line{
+	width:30rem;
+	height: 1px;
+	background-color: white;
+	margin:0 auto;
+	}
+	 .main-down{
+	position: absolute;
+	z-index:4;
+	color:#fff;
+	bottom:0;
+	left:50%;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	border:1px solid transparent;
+	line-height: 7rem;
+	font-size:4rem;
+	margin-bottom: 2rem;
+	transition: 0.2s;
+	}
+	.conainer a{
+    	font-size:3rem;
+    	font-weight: 600;
+	}
 	.footer strong{
 		margin-top:3rem 0 2rem;
         display: inline-block;
+        font-weight: 300;
+		font-size: 5rem;
+   	    border-bottom: 2px solid #fff;
 	}
-	.offer-button{
-		display: block;
-		width: 80%;
-	    max-width: 25rem;
+	.row p{
+		border-left:1px solid white;
+		border-right:1px solid white;
+		padding: 2rem;
+		margin-top: 2rem;
+		font-size:4rem;
+		text-shadow:  1px 1px 1px black;
+		font-weight: 600;
 	}
+	.social-links{
+	margin: 5rem;
+	padding: 1rem;
+	border: 1px solid #fff;
+	border-radius: 10px;
 }
-@media (min-width: 370px) and (max-width: 767px){
+.social-links a{
+	width: 8rem;
+	height:8rem;
+	line-height: 8rem;
+	display: inline-block;
+	color:#fff;
+	border:solid 1px #fff;
+	border-radius: 50%;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	font-size:4rem;
+	transition: 0.2s;
+}
+	.offer-button{
+	display: block;
+	margin: 1rem auto;
+    margin-top: 1rem;
+	border: 1px solid #fff;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	color: #fff;
+	font-size: 3.5rem;
+	border-radius: 100px;
+	transition:0.2s;
+}
+}
+@media (min-width: 380px) and (max-width: 767px){
 	html{
 		font-size:7px;
 	}
+	.main p{
+	font-weight: 300;
+	font-size: 3rem;
+	margin-top: 2rem;
+}
     .main-down{
 	position: absolute;
 	z-index:4;
@@ -239,70 +304,157 @@ a:active,a:visited, a:focus{
 	margin-bottom: 2rem;
 	transition: 0.2s;
 }
-	.footer strong{
-		margin-top:3rem 0 2rem;
-        display: inline-block;
+	.conainer a{
+    	font-size:3rem;
+    	font-weight: 600;
 	}
-	.offer-button{
-		display: block;
-		width: 80%;
-	    max-width: 25rem;
+	.row p{
+		border-left:1px solid white;
+		border-right:1px solid white;
+		padding: 2rem;
+		margin-top: 2rem;
+		font-size:4rem;
+		font-weight: 700;
 	}
-	.social-links a{
-		font-size: 1.5rem;
-	}
+	.footer{
+	background-color: #646464;
+	color:#fff;
+	text-align: center;
+	padding: 4rem;
+}
+.footer strong{
+	font-weight: 300;
+	font-size: 5rem;
+    border-bottom: 2px solid #fff;
+	
+}
+.social-links{
+	margin: 4Srem;
+	padding: 1rem;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+.social-links a{
+	width: 8rem;
+	height:8rem;
+	line-height: 8rem;
+	display: inline-block;
+	color:#fff;
+	border:solid 1px #fff;
+	border-radius: 50%;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	font-size:4rem;
+	transition: 0.2s;
+}
+.offer-button{
+	display: block;
+	margin: 1rem auto;
+    margin-top: 1rem;
+	border: 1px solid #fff;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	color: #fff;
+	font-size: 4rem;
+	border-radius: 100px;
+	transition:0.2s;
+}	
 }
 
 @media (min-width:300px) and (max-width: 380px){
 	html{
 		font-size:5px;
 	}
+	.main p{
+		font-size:4rem; 
+	}
 	.main-down{
-	position: absolute;
-	z-index:4;
+		position: absolute;
+		z-index:4;
+		color:#fff;
+		bottom:0;
+		left:45%;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		border:1px solid transparent;
+		line-height: 10rem;
+		font-size:3.5rem;
+		margin-bottom: 2rem;
+		transition: 0.2s;
+	}
+	.conainer a{
+    	font-size:4rem;
+    	font-weight: 600;
+	}
+	.row p{
+		border-left:1px solid white;
+		border-right:1px solid white;
+		padding: 2rem;
+		font-size:4rem;
+		font-weight: 700;
+	}
+	.footer{
+	background-color: #646464;
 	color:#fff;
-	bottom:0;
-	left:50%;
-	width: 10rem;
-	height: 10rem;
+	text-align: center;
+	padding: 4rem;
+}
+.footer strong{
+	font-weight: 300;
+	font-size: 5rem;
+    border-bottom: 1px solid #fff;
+	
+}
+.social-links a{
+	width: 8rem;
+	height:8rem;
+	line-height: 8rem;
+	display: inline-block;
+	color:#fff;
+	border:solid 1px #fff;
 	border-radius: 50%;
-	border:1px solid transparent;
-	line-height: 10rem;
-	font-size:3.5rem;
-	margin-bottom: 2rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	font-size:4rem;
 	transition: 0.2s;
 }
-	.footer strong{
-		margin-top:3rem 0 2rem;
-        display: inline-block;
-	}
-	.offer-button{
-		display: block;
-		width: 80%;
-	    max-width: 25rem;
-	}
-	.social-links a{
-		font-size: 1.5rem;
-	}
+.offer-button{
+	display: block;
+	margin: 1rem auto;
+    margin-top: 1rem;
+	border: 1px solid #fff;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	color: #fff;
+	font-size: 4rem;
+	border-radius: 100px;
+	transition:0.2s;
+}
+
 }
 @media (min-width:200px) and (max-width: 300px){
 	html{
 		font-size:4px;
 	}
 	.main-down{
-	position: absolute;
-	z-index:4;
-	color:#fff;
-	bottom:0;
-	left:50%;
-	width: 10rem;
-	height: 10rem;
-	border-radius: 50%;
-	border:1px solid transparent;
-	line-height: 10rem;
-	font-size:5rem;
-	margin-bottom: 2rem;
-	transition: 0.2s;
+		position: absolute;
+		z-index:4;
+		color:#fff;
+		bottom:0;
+		left:50%;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		border:1px solid transparent;
+		line-height: 10rem;
+		font-size:5rem;
+		margin-bottom: 2rem;
+		transition: 0.2s;
 	}
 	.footer strong{
 		margin-top:3rem 0 2rem;
@@ -319,22 +471,30 @@ a:active,a:visited, a:focus{
 }
 @media (min-width:0px) and (max-width: 200px){
 	html{
-		font-size:3px;
+		font-size:5px;
 	}
 	.main-down{
-	position: absolute;
-	z-index:4;
-	color:#fff;
-	bottom:0;
-	left:50%;
-	width: 10rem;
-	height: 10rem;
-	border-radius: 50%;
-	border:1px solid transparent;
-	line-height: 10rem;
-	font-size:4rem;
-	margin-bottom: 2rem;
-	transition: 0.2s;
+		position: absolute;
+		z-index:4;
+		color:#fff;
+		bottom:0;
+		left:45%;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		border:1px solid transparent;
+		line-height: 10rem;
+		font-size:4rem;
+		margin-bottom: 2rem;
+		transition: 0.2s;
+	}
+	.section-header{
+		left:40%;
+    	text-transform: uppercase;
+    	font-weight:  800;
+    	font-size:3rem;
+    	margin-bottom: 5rem ;
+
 	}
 	.footer strong{
 		margin-top:3rem 0 2rem;
@@ -348,8 +508,9 @@ a:active,a:visited, a:focus{
 	.social-links a{
 		font-size: 1.5rem;
 	}
+}
 	/*Модальное окно*/
-}.cd-main-content {
+ .cd-main-content {
   position: relative;
   z-index: 1;
   width: 100%;
